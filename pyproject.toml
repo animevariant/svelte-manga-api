@@ -9,7 +9,9 @@ dependencies = [
     "debugpy>=1.8.14",
     "fastapi>=0.115.12",
     "httpx>=0.28.1",
+    "opencv-python>=4.11.0.86",
     "prometheus-fastapi-instrumentator>=7.1.0",
+    "pydantic>=2.11.5",
     "python-dotenv>=1.1.0",
     "uvicorn>=0.34.3",
 ]
