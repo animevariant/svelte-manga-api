@@ -16,11 +16,15 @@ import os
 import logging
 from pydantic import BaseModel
 from bs4 import BeautifulSoup
+# routes for the API
+from .routers import ( router_home )   
 
 
 load_dotenv()
 
 app = FastAPI()
+
+app.include_router(router_home.router)
 
 allowed_origins = os.getenv("ALLOWED_ORIGINS", "https://manga.valiantlynx.com").split(",")
 print("ALLOWED_ORIGINS:",  allowed_origins)
