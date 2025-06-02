@@ -13,3 +13,19 @@ dependencies = [
     "python-dotenv>=1.1.0",
     "uvicorn>=0.34.3",
 ]
+
+[dependency-groups]
+dev = [
+    "chromadb>=0.6.3",
+    "edge-tts>=7.0.2",
+    "faster-whisper>=1.1.1",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-core>=0.3.63",
+    "numpy>=2.2.6",
+    "ollama>=0.5.1",
+    "pygame>=2.6.1",
+    "scipy>=1.15.3",
+    "sentence-transformers>=4.1.0",
+    "unstructured>=0.17.2",
+]
